@@ -80,7 +80,8 @@ const BookmarksList = ({
         </Button>
       </div>
       <ListGroup>
-        {visibleBookmarks.map((link) => (
+        {data.length === 0 ? (<p>No bookmarks on the list.</p>) : (
+        visibleBookmarks.map((link) => (
           <div key={link.id}>
             {" "}
             <ListGroup.Item
@@ -126,7 +127,7 @@ const BookmarksList = ({
               </Modal.Footer>
             </Modal>
           </div>
-        ))}
+        )))}
       </ListGroup>
 
       <Pagination

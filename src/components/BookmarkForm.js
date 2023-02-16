@@ -7,7 +7,7 @@ const BookmarkForm = ({
   setUrl,
   errorMessage,
   onSubmit,
-  className
+  className,
 }) => {
   return (
     <Form className="w-50 mx-auto my-4" onSubmit={onSubmit}>
